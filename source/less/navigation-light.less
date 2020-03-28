@@ -2,8 +2,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
+  display: flex;
 
-
+  outline: 1px solid green;
 }
 
 .navigation-light__list {
@@ -12,4 +14,26 @@
   padding: 0;
 
   display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  outline: 1px solid red;
+}
+
+.navigation-light__item {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+
+}
+
+.navigation-light__item a {
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  outline: 1px solid green;
+
 }
