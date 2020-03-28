@@ -3,7 +3,7 @@
   min-height: 610px;
 
   border-radius: 4px;
-  border: 1px solid green;
+  border: 1px solid red;
 }
 
 .goods-list {
@@ -14,13 +14,24 @@
   display: flex;
   flex-direction: column;
 
-  outline: 1px solid red;
 }
-/*
-.goods-item {
 
+.goods-item {
+  border-bottom: 1px solid green; //#ffffff;
+}
+
+.goods-item:last-child {
+  border-bottom: none;
 }
 
 .goods-item a {
+  display: block;
+  padding: 13px 0 13px 62px;
+  box-sizing: border-box;
 
-} */
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Panton", "Arial", sans-serif;
+
+}
