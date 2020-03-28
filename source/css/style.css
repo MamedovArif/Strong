@@ -265,7 +265,7 @@
   width: 262px;
   min-height: 610px;
   border-radius: 4px;
-  border: 1px solid green;
+  border: 1px solid red;
 }
 .goods-list {
   list-style: none;
@@ -278,16 +278,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.goods-item {
+  border-bottom: 1px solid green;
+}
+.goods-item:last-child {
+  border-bottom: none;
+}
+.goods-item a {
+  display: block;
+  padding: 13px 0 13px 62px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Panton", "Arial", sans-serif;
+}
+.slide {
+  width: 846px;
+  height: 610px;
   outline: 1px solid red;
 }
-/*
-.goods-item {
-
-}
-
-.goods-item a {
-
-} */
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -303,11 +315,59 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.sales-hits {
+  width: 1200px;
+  min-height: 674px;
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid red;
+}
+.sales-hits__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 124px;
+  padding-bottom: 49px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid red;
+}
+.sales-hits h2 {
+  padding: 0;
+  margin: 0;
+  margin-right: 32px;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 25px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: green;
+}
+.sales-hits__catalog {
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  color: #009ee2;
+  color: tomato;
+}
+.sales-hits__switches {
+  margin-left: auto;
+  outline: 1px solid red;
+}
 /*
 @import "social.less";
 @import "button.less";
 @import "visually-hidden.less";
 @import "variables.less";
+
 */
 body {
   display: -webkit-box;
