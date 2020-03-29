@@ -29,13 +29,15 @@
         <a class="header__middle-logotype logotype">LOGOtype</a>
         <form class="header__middle-form" method="get" action="https://devstrong.ru/">
           <label for="search"></label>
-          <input id="search" name="search" type="text" placeholder="Что Вы ищете?">
+          <div class="header__middle-input-wrapper">
+            <input id="search" name="search" type="text" placeholder="Что Вы ищете?"><p class="header__middle-input-svg"></p>
+          </div>
         </form>
-        <ul class="header__middle-functional">
-          <li><a>r</a></li>
-          <li><a>y</a></li>
-          <li><a>e</a></li>
-        </ul>
+        <div class="header__middle-functional">
+          <a class="header__middle-functional-item"><img class="header__middle-refer" src="img/refer.png" alt="авторизация" width="26" height="26"></a>
+          <a class="header__middle-functional-item"><img class="header__middle-heart" src="img/icon-heart.svg" alt="избранное" width="16" height="15"></a>
+          <a class="header__middle-functional-item"><img class="header__middle-cart" src="img/cart.png" alt="корзина" width="28" height="26"></a>
+        </div>
       </section>
       <section class="header__low">
         <div class="header__low-container">

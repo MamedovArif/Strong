@@ -5,7 +5,7 @@
   flex-grow: 1;
   display: flex;
 
-  outline: 1px solid green;
+  //outline: 1px solid green;
 }
 
 .navigation-light__list {
@@ -14,26 +14,47 @@
   padding: 0;
 
   display: flex;
-  justify-content: space-between;
   flex-grow: 1;
 
-  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 
 .navigation-light__item {
   outline: 1px solid red;
   display: flex;
   align-items: center;
-
+  margin-right: 43px;
+  margin-left: 40px;
 }
-
+.navigation-light__item:last-child {
+  margin-right: 0;
+  margin-left: 47px;
+}
 .navigation-light__item a {
+  position: relative;
 
   font-weight: 600;
   font-size: 14px;
   line-height: 25px;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 
   outline: 1px solid green;
+}
+
+.navigation-light__item a::before {
+  content: "";
+  position: absolute;
+
+  //display: block;
+  top: -18px;
+  left: 25%;
+  text-align: center;
+
+  width: 0;
+  height: 0;
+
+  border: 9px solid transparent;
+  border-top-color: green;
 
 }
