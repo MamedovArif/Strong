@@ -44,12 +44,12 @@
         <button class="header__low-catalog button" type="button">Каталог товаров</button>
           <nav class="header__low-nav navigation-light">
             <ul class="navigation-light__list">
-              <li class="navigation-light__item"><a>о компании</a></li>
-              <li class="navigation-light__item"><a>акции</a></li>
-              <li class="navigation-light__item"><a>новости</a></li>
-              <li class="navigation-light__item"><a>блог</a></li>
-              <li class="navigation-light__item"><a>эксперты</a></li>
-              <li class="navigation-light__item"><a>контакты</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--company" href="company.html">о компании</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--stocks">акции</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--news">новости</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--blog">блог</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--experts">эксперты</a></li>
+              <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--contacts">контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -61,19 +61,19 @@
       <div class="index-main-first-wrapper">
         <section class="goods">
           <ul class="goods-list">
-            <li class="goods-item"><a>Катушки</a></li>
-            <li class="goods-item"><a>Удилища</a></li>
-            <li class="goods-item"><a>Приманки</a></li>
-            <li class="goods-item"><a>Воблеры</a></li>
-            <li class="goods-item"><a>Лески и шнуры</a></li>
-            <li class="goods-item"><a>Поплавки</a></li>
-            <li class="goods-item"><a>Крючки</a></li>
-            <li class="goods-item"><a>Аксессуары</a></li>
-            <li class="goods-item"><a>Одежда</a></li>
-            <li class="goods-item"><a>Снаряжение</a></li>
-            <li class="goods-item"><a>Электроника</a></li>
-            <li class="goods-item"><a>Зимняя рыбылка</a></li>
-            <li class="goods-item"><a>Другое</a></li>
+            <li class="goods-item"><a href="catalog.html">Катушки</a></li>
+            <li class="goods-item"><a href="catalog.html">Удилища</a></li>
+            <li class="goods-item"><a href="catalog.html">Приманки</a></li>
+            <li class="goods-item"><a href="catalog.html">Воблеры</a></li>
+            <li class="goods-item"><a href="catalog.html">Лески и шнуры</a></li>
+            <li class="goods-item"><a href="catalog.html">Поплавки</a></li>
+            <li class="goods-item"><a href="catalog.html">Крючки</a></li>
+            <li class="goods-item"><a href="catalog.html">Аксессуары</a></li>
+            <li class="goods-item"><a href="catalog.html">Одежда</a></li>
+            <li class="goods-item"><a href="catalog.html">Снаряжение</a></li>
+            <li class="goods-item"><a href="catalog.html">Электроника</a></li>
+            <li class="goods-item"><a href="catalog.html">Зимняя рыбылка</a></li>
+            <li class="goods-item"><a href="catalog.html">Другое</a></li>
           </ul>
         </section>
         <section class="slide">
@@ -90,15 +90,49 @@
           <h2>Хиты продаж</h2>
           <a class="sales-hits__catalog">весь каталог</a>
           <p class="sales-hits__switches switches">
-            <button></button>
-            <button></button>
+            <button class="switches__button switches__button--left" type="button"></button>
+            <button class="switches__button switches__button--right" type="button"></button>
           </p>
         </div>
         <ul class="sales-hits__list">
-          <li class="sales-hits__item card-good"></li>
-          <li class="sales-hits__item card-good"></li>
-          <li class="sales-hits__item card-good"></li>
-          <li class="sales-hits__item card-good"></li>
+          <li class="sales-hits__item card-good">
+            <span>бестселлер</span>
+            <h4>катушка Adrenalin 7300 BC</h4>
+            <div><img></div>
+            <p>4 800 р.</p>
+          </li>
+          <li class="sales-hits__item card-good">
+            <span class="card-good__hit">хит</span>
+            <div class="card-good__image">
+              <img src="img/name.png" width="236" height="199" alt="Удилище">
+            </div>
+            <div><span></span><span></span></div>
+            <h4 class="card-good__title"><a>Удилище Matze Koch Rollen</a></h4>
+            <div class="card-good__price">13 490 р.</div>
+            <button class="card-good__buy">в корзину</button>
+          </li>
+          <li class="sales-hits__item card-good">
+            <span>скидка</span>
+            <span>хит</span>
+            <div>
+              <img>
+            </div>
+            <div><span></span></div>
+            <h4><a>Приманка Matze Koch Rollen</a></h4>
+            <div>3 240 р.<span>6200 р.</span></div>
+            <p>Ваша выгода 3 200 р.</p>
+            <button>в корзину</button>
+          </li>
+          <li class="sales-hits__item card-good">
+            <span>хит</span>
+            <div>
+              <img>
+            </div>
+            <div><span></span></div>
+            <h4><a>Катушка Matze Koch Rollen</a></h4>
+            <div>5 600 р.</div>
+            <button>в корзину</button>
+          </li>
         </ul>
       </section>
       <section class="novelties">
@@ -106,15 +140,47 @@
           <h2>Новинки</h2>
           <a class="novelties__catalog">весь каталог</a>
           <p class="novelties__switches switches">
-            <button></button>
-            <button></button>
+            <button class="switches__button switches__button--left" type="button"></button>
+            <button class="switches__button switches__button--right" type="button"></button>
           </p>
         </div>
         <ul class="novelties__list">
-          <li class="novelties__item card-good"></li>
-          <li class="novelties__item card-good"></li>
-          <li class="novelties__item card-good"></li>
-          <li class="novelties__item card-good"></li>
+          <li class="novelties__item card-good">
+            <span>акция</span>
+            <h4>удилище Adrenalin 7300 BC</h4>
+            <div><img></div>
+            <p>-30%</p>
+            <p>4 800 р.</p>
+          </li>
+          <li class="novelties__item card-good">
+            <div>
+              <img>
+            </div>
+            <div><span></span></div>
+            <h4><a>Катушка Matze Koch Rollen</a></h4>
+            <div>13 490 р.</div>
+            <button>в корзину</button>
+          </li>
+          <li class="novelties__item card-good">
+            <span>скидки</span>
+            <div>
+              <img>
+            </div>
+            <div><span></span></div>
+            <h4><a>Подсачек Matze Koch Rollen</a></h4>
+            <div>3 240 р.<span>6200 р.</span></div>
+            <p>Ваша выгода</p>
+            <button>в корзину</button>
+          </li>
+          <li class="novelties__item card-good">
+            <div>
+              <img>
+            </div>
+            <div><span></span></div>
+            <h4><a>Сумка рыболовная Matze Koch Rollen</a></h4>
+            <div>5 600 р.</div>
+            <button>в корзину</button>
+          </li>
         </ul>
       </section>
       <section class="latest-news">
@@ -122,8 +188,8 @@
           <h2>последние новости</h2>
           <a class="latest-news__all-news">все новости</a>
           <p class="latest-news__switches switches">
-            <button></button>
-            <button></button>
+            <button class="switches__button switches__button--left" type="button"></button>
+            <button class="switches__button switches__button--right" type="button"></button>
           </p>
         </div>
         <div class="latest-news__low">

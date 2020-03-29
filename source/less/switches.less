@@ -1,0 +1,34 @@
+.switches__button {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  outline: 1px solid red;
+
+  background-color: #1d1e1e;
+  border: none;
+  border-radius: 50%;
+}
+
+.switches__button::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+
+  border: 1.5px solid #ffffff;
+
+  transform: rotate(45deg);
+}
+
+.switches__button--left::before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.switches__button--right::before {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  left: 8px;
+}

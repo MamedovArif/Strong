@@ -30,7 +30,7 @@
   margin-right: 0;
   margin-left: 47px;
 }
-.navigation-light__item a {
+.navigation-light__link {
   position: relative;
 
   font-weight: 600;
@@ -42,19 +42,45 @@
   outline: 1px solid green;
 }
 
-.navigation-light__item a::before {
+.navigation-light__link:hover {
+  color: #009ee2;
+}
+
+.navigation-light__link::before {
   content: "";
   position: absolute;
 
-  //display: block;
   top: -18px;
-  left: 25%;
-  text-align: center;
+  left: auto;
 
   width: 0;
   height: 0;
 
   border: 9px solid transparent;
   border-top-color: green;
-
 }
+
+.navigation-light__link--company::before {
+  left: 38px;
+}
+
+.navigation-light__link--stocks::before {
+  left: 15px;
+}
+
+.navigation-light__link--news::before {
+  left: 25px;
+}
+
+.navigation-light__link--blog::before {
+  left: 7px;
+}
+
+.navigation-light__link--experts::before {
+  left: 28px;
+}
+
+.navigation-light__link--contacts::before {
+  left: 28px;
+}
+
