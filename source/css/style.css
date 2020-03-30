@@ -671,10 +671,20 @@ input[type="radio"].visually-hidden {
 .card-good__image--hook {
   margin-top: 15px;
 }
+.card-good__image--coil-blue {
+  margin-top: 8px;
+}
+.card-good__image--butterfly-net {
+  margin-top: 50px;
+}
+.card-good__image--bag {
+  margin-top: 33px;
+}
 .card-good__image img {
   margin: 0 auto;
   display: block;
   outline: 1px solid orange;
+  opacity: 0.5;
 }
 .card-good__rating {
   margin-top: 35px;
