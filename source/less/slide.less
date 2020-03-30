@@ -3,15 +3,19 @@
   min-height: 610px;
   display-flex: column;
 
+  color: #ffffff;
+
   outline: 1px solid red;
 }
 
 .slide__main {
+  position: relative;
+
   margin: 0;
   width: 100%;
   min-height: 410px;
   margin-bottom: 28px;
-  padding: 68px 41px 32px 41px;
+  padding: 60px 41px 32px 41px;
   box-sizing: border-box;
 
   outline: 1px solid orange;
@@ -19,8 +23,64 @@
 
 .slide__main h3 {
   margin: 0;
+  width: 400px;
+
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  outline: 1px solid orange;
 
 }
+
+.slide__main-description {
+  margin: 0;
+  margin-top: 17px;
+
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+
+  opacity: 0.6;
+
+  outline: 1px solid orange;
+}
+
+.slide__main-price {
+  margin: 0;
+  margin-top: 2px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+
+  outline: 1px solid orange;
+}
+
+.slide__main-button {
+  width: 175px;
+  height: 55px;
+  margin-top: 23px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  border: 1px solid orange;
+}
+
+.slide__main-image {
+  position: absolute;
+
+  top: -15px;
+  right: 75px;
+
+}
+
 .slide__preview {
   list-style: none;
   margin: 0;
