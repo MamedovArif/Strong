@@ -1,6 +1,41 @@
 .slide {
   width: 846px;
-  height: 610px;
+  min-height: 610px;
+  display-flex: column;
 
   outline: 1px solid red;
+}
+
+.slide__main {
+  margin: 0;
+  width: 100%;
+  min-height: 410px;
+  margin-bottom: 28px;
+  padding: 68px 41px 32px 41px;
+  box-sizing: border-box;
+
+  outline: 1px solid orange;
+}
+
+.slide__main h3 {
+  margin: 0;
+
+}
+.slide__preview {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  outline: 1px solid orange;
+}
+
+.slide__preview-item {
+  width: 261px;
+  min-height: 172px;
+
+  outline: 1px solid green;
 }
