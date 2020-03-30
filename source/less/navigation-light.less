@@ -4,8 +4,6 @@
   padding: 0;
   flex-grow: 1;
   display: flex;
-
-  //outline: 1px solid green;
 }
 
 .navigation-light__list {
@@ -15,8 +13,6 @@
 
   display: flex;
   flex-grow: 1;
-
-  //outline: 1px solid red;
 }
 
 .navigation-light__item {
@@ -32,6 +28,8 @@
 }
 .navigation-light__link {
   position: relative;
+
+  display: block;
 
   font-weight: 600;
   font-size: 14px;
@@ -57,7 +55,6 @@
   height: 0;
 
   border: 9px solid transparent;
-  border-top-color: green;
 }
 
 .navigation-light__link--company::before {
@@ -84,3 +81,6 @@
   left: 28px;
 }
 
+.navigation-light__link:hover::before {
+  border-top-color: #ffffff;
+}

@@ -35,13 +35,13 @@
         </form>
         <div class="header__middle-functional">
           <a class="header__middle-functional-item"><img class="header__middle-refer" src="img/refer.png" alt="авторизация" width="26" height="26"></a>
-          <a class="header__middle-functional-item"><img class="header__middle-heart" src="img/icon-heart.svg" alt="избранное" width="16" height="15"></a>
-          <a class="header__middle-functional-item"><img class="header__middle-cart" src="img/cart.png" alt="корзина" width="28" height="26"></a>
+          <a class="header__middle-functional-item header__middle-functional-item--heart"><img class="header__middle-heart" src="img/icon-heart.svg" alt="избранное" width="28" height="27"><span>3</span></a>
+          <a class="header__middle-functional-item header__middle-functional-item--cart"><img class="header__middle-cart" src="img/cart.png" alt="корзина" width="28" height="26"><span>2</span></a>
         </div>
       </section>
       <section class="header__low">
         <div class="header__low-container">
-        <button class="header__low-catalog button" type="button">Каталог товаров</button>
+        <button class="header__low-catalog button" type="button">Каталог товаров<span></span></button>
           <nav class="header__low-nav navigation-light">
             <ul class="navigation-light__list">
               <li class="navigation-light__item"><a class="navigation-light__link navigation-light__link--company" href="company.html">о компании</a></li>
@@ -95,11 +95,11 @@
           </p>
         </div>
         <ul class="sales-hits__list">
-          <li class="sales-hits__item card-good">
-            <span>бестселлер</span>
-            <h4>катушка Adrenalin 7300 BC</h4>
-            <div><img></div>
-            <p>4 800 р.</p>
+          <li class="sales-hits__item unique-card">
+            <h4>бестселлер</h4>
+            <a class="unique-card__description">катушка Adrenalin 7300 BC</a>
+            <div class="unique-card__image"><img></div>
+            <p class="unique-card__price">4 800 р.</p>
           </li>
           <li class="sales-hits__item card-good">
             <span class="card-good__hit">хит</span>
@@ -145,12 +145,12 @@
           </p>
         </div>
         <ul class="novelties__list">
-          <li class="novelties__item card-good">
-            <span>акция</span>
-            <h4>удилище Adrenalin 7300 BC</h4>
-            <div><img></div>
-            <p>-30%</p>
-            <p>4 800 р.</p>
+          <li class="novelties__item unique-card">
+            <h4>акция</h4>
+            <a class="unique-card__description">удилище Adrenalin 7300 BC</a>
+            <div class="unique-card__image"><img></div>
+            <p class="unique-card__sale">-30%</p>
+            <p class="unique-card__price unique-card__price--sale">4 800 р.</p>
           </li>
           <li class="novelties__item card-good">
             <div class="card-good__image card-good__image--coil-blue">
@@ -323,9 +323,15 @@
         <p>&copy; 2010-2019 Ltd. Все права защищены.</p>
         <div>
           <ul class="footer__low-social social">
-            <li class="social-item"><a href=""></a></li>
-            <li class="social-item"><a href=""></a></li>
-            <li class="social-item"><a href=""></a></li>
+            <li class="social__item"><a class="social__link social__link--vkontakte" href="">
+              <span class="visually-hidden">Вконтакте</span>
+            </a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="">
+              <span class="visually-hidden">Фейсбук</span>
+            </a></li>
+            <li class="social__item"><a class="social__link social__link--instagram" href="">
+              <span class="visually-hidden">Инстаграм</span>
+            </a></li>
           </ul>
         </div>
       </div>
